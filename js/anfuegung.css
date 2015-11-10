@@ -1,0 +1,99 @@
+body {
+  font-family: Microsoft JhengHei;
+}
+.top {
+  padding: 19px 11px;
+  opacity: .6;
+  background-color: #46484B;
+  border-radius: 0.6rem;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  display: none;
+}
+.topcon {
+  position: relative;
+  width: 1.3em;
+  height: .2rem;
+  background: white;
+  border-radius: 2.5rem;
+  transform: rotate(90deg);
+  -webkit-transform:rotate(90deg);
+  -moz-transform: rotate(90deg);
+}
+.topcon:before, .topcon:after {
+  content: "";
+  height: .2rem;
+  background: white;
+  position: absolute;
+  width: 1.2rem;
+}
+.topcon:before {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform-origin: left top;
+  -webkit-transform-origin: left top;
+  -moz-transform-origin: left top;
+}
+.topcon:after {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform-origin: left bottom;
+  -webkit-transform-origin: left bottom;
+  -moz-transform-origin: left bottom;
+}
+.nav-login {
+  padding: 10px 0 5px 0;
+  list-style: none;
+}
+.nav-login .navbar-collapse {
+  padding: 0;
+}
+.nav-login ul {
+  list-style: none;
+}
+@media (max-width: 768px) {
+.nav-login ul,
+.trans {
+  margin-top: 16px;
+  }
+}
+.nav-login a {
+  color: #777;
+  line-height: 20px;
+  padding: 0 15px;
+  text-decoration: none;
+}
+.nav-login a:hover,
+.nav-login a:focus {
+  color: #333;
+}
+.nav-login .navbar-collapse.in {
+  overflow-y: inherit;
+  border: none;
+}
+.login-list > li {
+  float: left;
+}
+.comic-list h2 {
+  text-align:left;
+  padding: 10px;
+}
+.comic-list-pic {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-clip: padding-box;
+    box-sizing: border-box;
+    overflow: hidden;
+	border: 4px double #ddd;
+    border-radius: 4px;
+}
+.comic-list-pic-auto:before {
+  content: "";
+  display: block;
+  padding-top: 180%;
+}
